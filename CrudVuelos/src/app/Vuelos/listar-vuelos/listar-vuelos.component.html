@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="card">
+
+        <div class="card-header">
+            <h3>{{"VUELOS"|translate}}</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead> 
+                    <tr class="text-center">
+                        <th>{{"ID_VUELO"|translate}}</th>
+                        <th>{{"CAPACIDAD"|translate}}</th>
+                        <th>{{"FECHA"|translate}}</th>
+                        <th>{{"HORA"|translate}}</th>
+                        <th>{{"AEROPUERTOFK"|translate}}</th>
+                        <th>{{"EMPRESAFK"|translate}}</th>
+                        <th>{{"Acción"|translate}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let vuelo of vuelos" class="text-center">
+                        <td>{{vuelo.ID_VUELO}}</td>
+                        <td>{{vuelo.CAPACIDAD}}</td>
+                        <td>{{vuelo.FECHA}}</td>
+                        <td>{{vuelo.HORA}}</td>
+                        <td>{{vuelo.AEROPUERTOFK}}</td>
+                        <td>{{vuelo.EMPRESAFK}}</td>
+                        <td>
+                            <button (click)="listarClientes(vuelo)" class="btn btn-warining" style="margin-left: 10px;">{{"Ver pasajeros"|translate}}</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

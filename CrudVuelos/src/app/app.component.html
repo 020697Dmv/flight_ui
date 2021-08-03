@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>
+     {{ "VUELOS" | translate}} 
+  </h1>
+</div>
+<div class="container">
+
+    <button (click)="listar()" class="btn bt">{{"Listar Clientes"|translate}}</button>
+    <button (click)="nuevo()" class="btn btn-info" style="margin-left: 10px;">{{"Nuevo Cliente"|translate}}</button>
+    <button (click)="vuelos()" class="btn btn-info" style="margin-left: 10px;">{{"Vuelos"|translate}}</button>
+
+</div>
+<router-outlet></router-outlet>

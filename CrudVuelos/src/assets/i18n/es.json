@@ -1,0 +1,24 @@
+{
+"Add Clients":"Agregar Clientes",
+"ID":"ID",
+"E-MAIL":"EMAIL",
+"NAME":"NOMBRE",
+"PHONE":"TELEFONO",
+"Keep":"Guardar",
+"Update":"Actualizar",
+"Customers":"Clientes",
+"Edit":"Editar",
+"Delete":"Elimiar",
+"FLIGHT_ID":"ID_VUELO",
+"CAPACITY":"CAPACIDAD",
+"DATE":"FECHA",
+"TIME":"HORA",
+"AEROPUERTOFK":"AEROPUERTOFK",
+"EMPRESAFK":"EMPRESAFK",
+"Action":"Acción",
+"FLIGHTS":"VUELOS",
+"List Clients":"Listar Clientes",
+"New client":"Nuevo Cliente",
+"Flights":"Vuelos"
+    
+}

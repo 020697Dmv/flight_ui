@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card">
+
+        <div class="card-header">
+            <h3>{{"Clientes"|translate}}</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead> 
+                    <tr class="text-center">
+                        <th>{{"ID"|translate}}</th>
+                        <th>{{"EMAIL"|translate}}</th>
+                        <th>{{"NOMBRE"|translate}}/th>
+                        <th>{{"TELEFONO"|translate}}</th>
+                        <th>{{"Acción"|translate}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let cliente of clientes" class="text-center">
+                        <td>{{cliente.ID}}</td>
+                        <td>{{cliente.EMAIL}}</td>
+                        <td>{{cliente.NOMBRE}}</td>
+                        <td>{{cliente.TELEFONO}}</td>
+                        <td>
+                            <button (click)="Editar(cliente)" class="btn btn-warining" style="margin-left: 10px;">{{"Editar"|translate}}</button>
+                            <button (click)="Elimiar(cliente)" class="btn btn-danger" style="margin-left: 10px;">{{"Elimiar"|translate}}</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
